@@ -13,7 +13,7 @@ namespace AzureBlobStorageURL
             {
                 // Set start time to five minutes before now to avoid clock skew.
                 SharedAccessStartTime = DateTime.UtcNow.AddMinutes(-5),
-                SharedAccessExpiryTime = DateTime.UtcNow.AddMinutes(5),
+                SharedAccessExpiryTime = DateTime.UtcNow.AddMinutes(1),
                 Permissions = SharedAccessBlobPermissions.Read
             };
 
